@@ -1,0 +1,20 @@
+{
+  "faq": [
+    {
+      "question": "What are the company’s business hours?",
+      "answer": "Our company is open from 9 AM to 6 PM, Monday through Friday."
+    },
+    {
+      "question": "Where is your office located?",
+      "answer": "Our office is located at 123 Business St, Cityville, State, 12345."
+    },
+    {
+      "question": "How can I contact customer support?",
+      "answer": "You can contact customer support via email at support@company.com or call us at +1 800-123-4567."
+    },
+    {
+      "question": "What is your return policy?",
+      "answer": "You can return products within 30 days for a full refund."
+    }
+  ]
+}
