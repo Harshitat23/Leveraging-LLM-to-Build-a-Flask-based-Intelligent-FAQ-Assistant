@@ -20,3 +20,28 @@ All the user queries and responses are logged to a database (MongoDB) for future
 **Fallback Mechanism:**
 In cases where the assistant cannot answer a question, it provides a fallback response such as suggesting related topics for this we have use T5 Model.
 
+**Setup and Installation**
+•	Python 3.x
+•	Flask
+•	Flask-Cors
+•	PyMongo
+•	MongoDB (running locally or remotely)
+•	Transformers (Hugging Face)
+•	Torch
+
+**Architecture**
+
+**Frontend:**
+The index.html file provides the user interface for interaction with the assistant. It includes a chat container where messages are exchanged between the user and the assistant.
+
+**Flask Backend:**
+Flask serves as the backend server, receiving user queries through the /ask endpoint.
+The backend processes the query by passing it through the LLM model (T5 model) and responds with a generated message based on the knowledge base.
+
+**LLM Integration:**
+A Large Language Model (LLM), is used to process and generate responses to user queries. The assistant uses the model to generate context-aware answers based on the knowledge base.
+
+**Interaction Logging:**
+All interactions are logged into a database, like MongoDB, to track user behavior, monitor the quality of responses, and continuously improve the system.
+
+This project provides a robust FAQ chatbot with advanced NLP-based responses and logging capabilities using Flask and MongoDB.
