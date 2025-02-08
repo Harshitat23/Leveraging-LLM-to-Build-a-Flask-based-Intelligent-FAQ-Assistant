@@ -7,7 +7,7 @@ Flask-based intelligent FAQ assistant using LLM to generate contextually accurat
 The assistant is pre-loaded with a knowledge base, which can be a structured file (JSON). The knowledge base can be updated periodically to keep the information current.
 
 **Dynamic Query Handling:**
-Using an LLM, the assistant processes and generates responses based on user queries. It can understand context, making it capable of delivering accurate and relevant answers.
+Using an LLM, the assistant processes and generates responses based on user queries. It can understand context, making it capable of delivering accurate and relevant answers. Handling instances where the LLM cannot provide a clear answer by giving a polite fallback response or suggesting related topics.
 
 **Flask Application:**
 1) Frontend
@@ -31,17 +31,17 @@ In cases where the assistant cannot answer a question, it provides a fallback re
 
 **Architecture**
 
-**Frontend:**
+**1) Frontend:**
 The index.html file provides the user interface for interaction with the assistant. It includes a chat container where messages are exchanged between the user and the assistant.
 
-**Flask Backend:**
+**2) Flask Backend:**
 Flask serves as the backend server, receiving user queries through the /ask endpoint.
 The backend processes the query by passing it through the LLM model (T5 model) and responds with a generated message based on the knowledge base.
 
-**LLM Integration:**
+**3) LLM Integration:**
 A Large Language Model (LLM), is used to process and generate responses to user queries. The assistant uses the model to generate context-aware answers based on the knowledge base.
 
-**Interaction Logging:**
+**4) Interaction Logging:**
 All interactions are logged into a database, like MongoDB, to track user behavior, monitor the quality of responses, and continuously improve the system.
 
 This project provides a robust FAQ chatbot with advanced NLP-based responses and logging capabilities using Flask and MongoDB.
